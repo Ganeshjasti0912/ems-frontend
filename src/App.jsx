@@ -27,7 +27,7 @@ import List from './Components/employee/List';
 import Add from './Components/employee/Add';
 import Edit from './Components/employee/Edit';
 import ViewSalary from './Components/salary/ViewSalary';
-//import SummaryCard from './Components/dashboard/SummaryCard';
+import SummaryCard from './Components/dashboard/Summarycard';
 import Summary from './Components/EmployeeDashboard/Summary';
 import LeaveList from './Components/leave/LeaveList';
 import AddLeave from './Components/leave/Add';
