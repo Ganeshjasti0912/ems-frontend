@@ -11,7 +11,7 @@ const EditDepartment = () => {
     const fetchDepartment = async () => {
       setDepLoading(true);
       try {
-        const response = await axios.get(`http://localhost:3000/api/department/${id}`, {
+        const response = await axios.get(`https://ems-backend-i0kh.onrender.com/api/department/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
