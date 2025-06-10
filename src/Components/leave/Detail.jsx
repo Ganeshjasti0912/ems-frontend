@@ -33,7 +33,7 @@ const Detail = () => {
 
   const changeStatus = async (id, status) => {
     try {
-      const response = await axios.put(`http://localhost:3000/api/leave/${id}`, { status }, {
+      const response = await axios.put(`https://ems-backend-i0kh.onrender.com/api/leave/${id}`, { status }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -59,7 +59,7 @@ const Detail = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex justify-center">
               <img
-                src={`http://localhost:3000/${leave?.employeeId.userId?.profileImage || 'default.jpg'}`}
+                src={`https://ems-backend-i0kh.onrender.com/${leave?.employeeId.userId?.profileImage || 'default.jpg'}`}
                 alt="Profile"
                 className="rounded-full border w-40 h-40 object-cover bg-gray-200"
               />

@@ -39,7 +39,7 @@ const AddSalary = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/salary/add/`,
+        `https://ems-backend-i0kh.onrender.com/api/salary/add/`,
         employee,
         {
           headers: {

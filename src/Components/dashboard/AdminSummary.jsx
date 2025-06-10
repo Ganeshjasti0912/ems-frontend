@@ -8,7 +8,7 @@ const AdminSummary = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-       const summary = await axios.get('http://localhost:3000/api/dashboard/summary', {
+       const summary = await axios.get('https://ems-backend-i0kh.onrender.com/api/dashboard/summary', {
           
           headers: {
             

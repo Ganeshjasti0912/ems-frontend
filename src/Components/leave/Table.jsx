@@ -10,7 +10,7 @@ const Table = () => {
   const [filteredLeaves, setFilteredLeaves] = useState([]);
   const fetchLeaves = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/leave', {
+      const response = await axios.get('https://ems-backend-i0kh.onrender.com/api/leave', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
