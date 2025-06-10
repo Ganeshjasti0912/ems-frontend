@@ -27,7 +27,7 @@ const List = () => {
           deptName: emp.department.deptName,
           name: emp.userId.name,
           dob: new Date(emp.dob).toLocaleDateString(),
-          profileImage: <img width={40} className="rounded-full" src={`http://localhost:3000/${emp.userId.profileImage}`} />,
+          profileImage: <img width={40} className="rounded-full" src={`https://ems-backend-i0kh.onrender.com/${emp.userId.profileImage}`} />,
           action: (<EmployeeButtons __id={emp._id} />)
         }));
         setEmployees(data);
