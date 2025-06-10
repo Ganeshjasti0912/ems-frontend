@@ -11,7 +11,7 @@ const DepartmentList = () => {
 
   const fetchDepartments = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/department', {
+      const response = await axios.get('https://ems-backend-i0kh.onrender.com/api/department', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
